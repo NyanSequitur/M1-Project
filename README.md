@@ -1,5 +1,3 @@
-Joe Vassallo's Open-ended project
-
 This program pulls a list of planes from the opensky network (opensky-network.org/) and runs search functions on it, such as finding the closest plane to a given pair of latitude and longitude values, or finding the distance between two known planes. It can also just print the information of a known plane.
 
 FUTURE PLANS:
@@ -25,5 +23,5 @@ KNOWN BUGS:
 - ICAO24 codes are *supposed* to be unique according to the International Civil Aviation Organization, but this is not verified in the code.
 
 VIDEO:
-(Unfortunately I hit my daily rate limit during development, and it is Sunday, so I don't have time to wait for the rollover. As a result, the program will be pulling off the backup.json file as opposed to live updates.)
+(Unfortunately I hit the daily rate limit during development. As a result, the program will be pulling off the backup.json file as opposed to live updates.)
 https://youtu.be/3P8STiwjq9M
