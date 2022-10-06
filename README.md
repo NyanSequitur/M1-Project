@@ -1,4 +1,3 @@
-# M1OEP-jwvassal
 Joe Vassallo's Open-ended project
 
 This program pulls a list of planes from the opensky network (opensky-network.org/) and runs search functions on it, such as finding the closest plane to a given pair of latitude and longitude values, or finding the distance between two known planes. It can also just print the information of a known plane.
