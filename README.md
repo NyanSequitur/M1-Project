@@ -1,7 +1,7 @@
 This program pulls a list of planes from the opensky network (opensky-network.org/) and runs search functions on it, such as finding the closest plane to a given pair of latitude and longitude values, or finding the distance between two known planes. It can also just print the information of a known plane.
 
 FUTURE PLANS:
--Convert the category property to be parsed into an enum, instead of storing it as an int and then having a lookup table printed.
+- Convert the category property to be parsed into an enum, instead of storing it as an int and then having a lookup table printed.
 - Search all planes to find the closest pair distance-wise, while respecting the curvature of the earth. This is a problem that has been solved already, so theoretically it shouldn't be too difficult.
 - Introduce graphics and plotting a plane (or planes) on a projection of the earth.
 - Introduce an iterative solution for my Plane.setFromJSON() function. It feels so doable, but I tried for a while and struggled with it due to the different ways I have to handle null and empty, and strings/doubles/bools.
