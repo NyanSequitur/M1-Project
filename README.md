@@ -1,4 +1,4 @@
-This program pulls a list of planes from the opensky network (opensky-network.org/) and runs search functions on it, such as finding the closest plane to a given pair of latitude and longitude values, or finding the distance between two known planes. It can also just print the information of a known plane.
+This program pulls a list of planes from the opensky network (opensky-network.org/) and runs search functions on it, such as finding the closest plane to a given pair of latitude and longitude values, or finding the distance between two known planes. It can also just print the information of a known plane. It is written entirely in C++, and uses 
 
 FUTURE PLANS:
 - Convert the category property to be parsed into an enum, instead of storing it as an int and then having a lookup table printed.
@@ -12,13 +12,15 @@ CODE CITATIONS:
 https://github.com/Microsoft/cpprestsdk/wiki/Getting-Started-Tutorial
 and then used
 https://stackoverflow.com/questions/31371659/set-basic-http-authentication-in-casablanca
-for its http authentification.
+for its http authentification. It also used https://json.nlohmann.me/ in order to parse JSON into managable objects.
+
 
 - I wrote the implementation of the Haversine distance formula, but I did not derive it myself. See https://en.wikipedia.org/wiki/Haversine_formula for a more thorough explanation of the math going on here.
 
 KNOWN BUGS:
 - Crashes if ran while not connected to the internet.
-- (Presumably) crashes if the OpenSky API goes down
+- ~~(Presumably) crashes if the OpenSky API goes down~~
+  - The OpenSky API had an outage and the API returns an empty JSON file instead of nothing. The program does not crash.
 - Tracks ground vehicles and multilateration towers (both not air vehicles) if they have an ICAO24 code assigned to them, which happens at some airports.
 - ICAO24 codes are *supposed* to be unique according to the International Civil Aviation Organization, but this is not verified in the code.
 
